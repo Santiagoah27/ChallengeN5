@@ -26,7 +26,7 @@ Antes de iniciar el proyecto, es vital configurar tus propias credenciales de ba
 2. Localiza la sección `ConnectionStrings`.
 3. Modifica las propiedades `User Id` y `Password` con tus credenciales:
 
-```json
+``json
 "ConnectionStrings": {
     "DefaultConnection": "Server=(local);Database=ManagePermissions;User Id=[TU_USUARIO];Password=[TU_CONTRASEÑA];TrustServerCertificate=true"
 }
@@ -37,7 +37,7 @@ Asegúrate de reemplazar `[TU_USUARIO]` con tu nombre de usuario y `[TU_CONTRASE
 
 Para ejecutar el entorno con Docker, asegúrate de tener instalado Docker y Docker Compose en tu máquina. Luego, en la raíz del proyecto, ejecuta:
 
-```bash
+``bash
 docker-compose up
 
 Esto iniciará los servicios de Kafka, Zookeeper y Elasticsearch. Asegúrate de tener los puertos apropiados disponibles en tu máquina.
@@ -46,7 +46,7 @@ Esto iniciará los servicios de Kafka, Zookeeper y Elasticsearch. Asegúrate de 
 
 Con todo en su lugar, ahora puedes ejecutar el backend. Navega a la raíz del proyecto y ejecuta:
 
-```bash
+``bash
 dotnet run
 
 ## APIs
